@@ -6,25 +6,21 @@
   },
   "extensions": [
     {
-      "name": "Red box",
-      "component": "redBox",
-      "slot": "Boxes"
+      "name": "client-list-dashboard-link",
+      "component": "homeDashboardLink",
+      "slot": "homepage-dashboard-slot",
+      "meta": {
+        "name": "client-list",
+        "slot": "client-list-slot",
+        "title": "Client list"
+      },
+      "online": true,
+      "offline": true
     },
     {
-      "name": "Blue box",
-      "component": "blueBox",
-      "slot": "Boxes"
-    },
-        {
-      "name": "Brand box",
-      "component": "blueBox",
-      "slot": "Boxes"
-    }
-  ],
-  "pages": [
-    {
-      "component": "root",
-      "route": "root"
+      "name": "client-list",
+      "component": "home",
+      "slot": "client-list-slot"
     }
   ]
 }
