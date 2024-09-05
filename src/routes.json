@@ -21,6 +21,11 @@
       "name": "client-list",
       "component": "home",
       "slot": "client-list-slot"
+    },
+    {
+      "name": "patient table",
+      "component": "clientTable",
+      "slot": "clients"
     }
   ]
 }

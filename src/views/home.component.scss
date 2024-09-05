@@ -4,5 +4,9 @@
 @import '~@openmrs/esm-styleguide/src/vars';
 
 .page {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 2rem 4rem;
   width: 100%;
 }
