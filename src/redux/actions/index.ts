@@ -1,12 +1,12 @@
 interface chartConfig {
-  name: string,
-
+  name: string;
+  type: string;
+  resource: string;
 }
 
-export const setCharts = (chartConfig) => (dispatch) => {
+export const setChartsAction = (chartConfig) => (dispatch: any) => {
   dispatch({
     type: 'SET_CHARTS',
     payload: chartConfig,
   });
 };
-

@@ -1,5 +1,5 @@
 import { getSyncLifecycle, defineConfigSchema } from '@openmrs/esm-framework';
-import { configSchema } from './config-schema';
+import { configSchema } from './config/config-schema';
 import homeComponent from './parent/home.component';
 import { createDashboardLink } from './components/nav/createDashboardLink.component';
 import { dashboardMeta } from './config/dashboard.meta';

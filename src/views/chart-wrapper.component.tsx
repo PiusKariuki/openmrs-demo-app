@@ -5,8 +5,7 @@ const ChartWrapperComponent: React.FC<{}> = () => {
   const path = window.getOpenmrsSpaBase();
   return (
     <div>
-      This is a chart wrapper
-      <Link href={`${path}home/edit`} passHref>
+      <Link href={`${path}home/graphical-charts/build`} passHref>
         <Button>Chart Builder</Button>
       </Link>
     </div>

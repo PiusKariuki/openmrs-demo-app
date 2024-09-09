@@ -1,6 +1,6 @@
 export const dashboardMeta = {
-  name: "client-list",
-  path: "client-list",
-  slot: "client-list-slot",
-  title: "Client list app"
+  name: "graphical-charts",
+  path: "graphical-charts",
+  slot: "graphical-charts-slot",
+  title: "Graphical charts apps"
 }

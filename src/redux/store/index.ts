@@ -4,18 +4,15 @@ import { thunk } from 'redux-thunk';
 import { persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-interface WindowType {
-  __REDUX_DEVTOOLS_EXTENSION_COMPOSE__?: typeof compose;
-}
 
 const initialState = {};
 
 const reducer = combineReducers({
-  chartsReducer,
+  charts: chartsReducer,
 });
 
 const persistConfig = {
-  key: 'members',
+  key: 'charts',
   storage,
   // whitelist: ["members"]
 };
@@ -23,6 +20,7 @@ const persistConfig = {
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 
+// @ts-ignore
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__  || compose;
 
 export const store = createStore(persistedReducer, initialState, composeEnhancer(applyMiddleware(thunk)));

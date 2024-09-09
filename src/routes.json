@@ -10,17 +10,17 @@
       "component": "homeDashboardLink",
       "slot": "homepage-dashboard-slot",
       "meta": {
-        "name": "client-list",
-        "slot": "client-list-slot",
-        "title": "Client list"
+        "name": "graphical-charts",
+        "slot": "graphical-charts-slot",
+        "title": "Graphical charts"
       },
       "online": true,
       "offline": true
     },
     {
-      "name": "client-list",
+      "name": "graphical-charts",
       "component": "home",
-      "slot": "client-list-slot"
+      "slot": "graphical-charts-slot"
     }
   ]
 }
