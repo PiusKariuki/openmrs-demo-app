@@ -18,10 +18,8 @@ export const useChartBuilder = () => {
   const [textState, setTextState] = useState<string>('');
 
 
-  console.log("chart config", chartConfig);
 
   const submitHandler = (data:any) => {
-    console.log('data', JSON.parse(data.charts));
     // @ts-ignore
     dispatch(setChartsAction(JSON.parse(data?.charts)))
   };

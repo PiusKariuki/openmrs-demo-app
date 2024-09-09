@@ -41,6 +41,14 @@
   line-height: 0px;
 }
 
+.headerTitle:hover {
+  text-decoration: none;
+}
+
+.headerTitle:focus {
+  text-decoration: none;
+}
+
 
 .form {
   display: flex;
