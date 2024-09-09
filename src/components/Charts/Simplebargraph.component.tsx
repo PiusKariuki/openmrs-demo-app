@@ -5,6 +5,7 @@ import { ScaleTypes } from '@carbon/charts-react';
 
 export default function Simplebargraph() {
 	const options = {
+		title: 'Simple Bar Chart',
 		axes: {
 			left: {
 				mapsTo: 'y',
@@ -38,7 +39,7 @@ export default function Simplebargraph() {
 	]
 
     return (
-        <div style={{ height: '300px' }}>
+        <div style={{ height: '500px' }}>
 			<SimpleBarChart
 				data={data}
 				options={options}
