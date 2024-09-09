@@ -4,8 +4,6 @@ import { useForm } from 'react-hook-form';
 import IllustrationComponent from '../components/illustration/illustration.component';
 import styles from './chart-builder.scss';
 import { useTranslation } from 'react-i18next';
-import { useDispatch, useSelector } from 'react-redux';
-import { setChartsAction } from '../redux/actions';
 import { useChartBuilder } from '../hooks/useChartBuilder';
 
 
@@ -30,7 +28,7 @@ const ChartBuilderComponent: React.FC<{}> = () => {
         </div>
       </div>
       <form onSubmit={handleSubmit(submitHandler)} className={styles.form}>
-        <TextArea value={textState} id="charts" rows={10} {...register('charts', { required: 'This field is required' })} />
+        <TextArea  labelText="JSON Config for your chart" value={textState} id="charts" rows={10} {...register('charts', { required: 'This field is required' })} />
         <Button type="submit">Save</Button>
       </form>
     </div>
