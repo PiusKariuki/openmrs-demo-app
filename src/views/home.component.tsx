@@ -8,7 +8,7 @@ const Home: React.FC<{}> = () => {
   return (
     <div className={styles.page}>
       <ExtensionSlot name="clients">
-        {/* <Extension /> */}
+        <Extension />
         <Simplebargraph />
         <SimplePieChart />
       </ExtensionSlot>
