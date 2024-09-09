@@ -42,7 +42,11 @@
   "dependencies": {
     "@carbon/charts-react": "^1.20.0",
     "@carbon/react": "^1.33.1",
-    "lodash-es": "^4.17.21"
+    "lodash-es": "^4.17.21",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^3.1.0"
   },
   "peerDependencies": {
     "@openmrs/esm-framework": "*",
