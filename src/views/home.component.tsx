@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from './home.component.scss';
-import { Extension, ExtensionSlot } from '@openmrs/esm-framework';
+import ChartWrapperComponent from "../components/chart-wrapper.component";
 
 const Home: React.FC<{}> = () => {
   return (
     <div className={styles.page}>
-      <ExtensionSlot name="clients">
-        <Extension />
-      </ExtensionSlot>
+      <ChartWrapperComponent />
     </div>
   );
 };

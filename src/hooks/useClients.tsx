@@ -20,7 +20,7 @@ export interface TableHeadConfig {
 export const useClients = () => {
   const [cleanData, setCleanData] = useState<Array<PatientObject>>([])
 
-  const { data, error, isLoading } = useSWR<any, Error>(
+  const { data, error, isLoading, mutate } = useSWR<any, Error>(
     `${fhirBaseUrl}/Patient`,
     openmrsFetch
   );
