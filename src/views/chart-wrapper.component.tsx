@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Link } from '@carbon/react';
+import { Button, Link, SkeletonPlaceholder } from '@carbon/react';
 import styles from './charts.scss';
 import IllustrationComponent from '../components/illustration/illustration.component';
 import { useTranslation } from 'react-i18next';
@@ -12,7 +12,6 @@ const ChartWrapperComponent: React.FC<{}> = () => {
   const { t } = useTranslation();
 
   const { isLoading, formattedData } = useChartWrapper();
-  // console.log('formatted data', formattedData);
   const chartConfig = useSelector((state: any) => state.charts);
 
   return (
@@ -31,9 +30,14 @@ const ChartWrapperComponent: React.FC<{}> = () => {
           <Button>Chart Builder</Button>
         </Link>
       </div>
-      {chartConfig.map(config => (
-        <ChartSelectorComponent config={config} data={formattedData} />
-      ))}
+
+      {isLoading ? (
+        <SkeletonPlaceholder />
+      ): (
+        chartConfig.map(config => (
+          <ChartSelectorComponent config={config} data={formattedData} />
+        ))
+      )}
 
 
     </div>
