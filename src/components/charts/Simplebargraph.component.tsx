@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { SimpleBarChart } from '@carbon/charts-react';
 import '@carbon/charts-react/styles.css';
 import { ScaleTypes } from '@carbon/charts-react';

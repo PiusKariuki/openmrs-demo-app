@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Button, Link, TextArea } from '@carbon/react';
 import { useForm } from 'react-hook-form';
 import IllustrationComponent from '../components/illustration/illustration.component';
-import styles from './chart-builder.scss';
+import styles from './charts.scss';
 import { useTranslation } from 'react-i18next';
 import { useChartBuilder } from '../hooks/useChartBuilder';
 import { useNavigate } from 'react-router-dom';
